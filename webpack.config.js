@@ -12,6 +12,15 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
     },
+    devServer: {
+        historyApiFallback: true,
+        disableHostCheck: true,
+        port: process.env.PORT,
+        contentBase: path.resolve(__dirname, 'dist'),
+        headers: {
+            "Access-Control-Allow-Origin": "*"
+        }
+    },
     module: {
         rules: [
             {
