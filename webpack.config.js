@@ -1,18 +1,28 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require('path');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html"
 });
 
+const uglifyPlugin = new UglifyJSPlugin({
+    parallel: 4,
+    uglifyOptions: {
+        compress: true
+    }
+});
+
 module.exports = {
     entry: { main: './src/index.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js'
+        filename: 'main.[hash].js'
     },
     devServer: {
+        historyApiFallback: true,
+        disableHostCheck: true,
         port: process.env.PORT,
         contentBase: path.resolve(__dirname, 'dist')
     },
@@ -51,5 +61,5 @@ module.exports = {
               },
         ]
     },
-    plugins: [htmlPlugin]
+    plugins: [htmlPlugin, uglifyPlugin]
 };

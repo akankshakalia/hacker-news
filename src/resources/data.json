@@ -1,0 +1,776 @@
+{
+    "hits": [
+      {
+        "created_at": "2020-04-25T19:29:55.000Z",
+        "title": "Liero can be played in browser now, for those who remember",
+        "url": "https://www.webliero.com/",
+        "author": "farseer",
+        "points": 51,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 11,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587842995,
+        "_tags": [
+          "story",
+          "author_farseer",
+          "story_22980676",
+          "front_page"
+        ],
+        "objectID": "22980676",
+        "_highlightResult": {
+          "title": {
+            "value": "Liero can be played in browser now, for those who remember",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://www.webliero.com/",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "farseer",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T19:25:03.000Z",
+        "title": "Show HN: XpanXn – chat designed for how conversations work",
+        "url": "https://xpanxn.com",
+        "author": "phumbe",
+        "points": 1,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 1,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587842703,
+        "_tags": [
+          "story",
+          "author_phumbe",
+          "story_22980629",
+          "show_hn"
+        ],
+        "objectID": "22980629",
+        "_highlightResult": {
+          "title": {
+            "value": "Show HN: XpanXn – chat designed for how conversations work",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://xpanxn.com",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "phumbe",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T19:18:05.000Z",
+        "title": "Ask HN: Why do distros ship old software?",
+        "url": null,
+        "author": "Meekro",
+        "points": 4,
+        "story_text": "Why do the most popular Linux distros ship old software? Some distros will even go so far as to create their own custom patches to fix bugs in older versions of software instead of just pushing out the latest version. I can understand when it&#x27;s the kernel and they want to avoid upgrading too often, but why do they do this for packages like Apache, or MySQL, or Ruby? Why do they call those old versions stable? Surely the latest release from the developers would be more &quot;stable&quot; than a 2-year-old version with some backported security fixes.",
+        "comment_text": null,
+        "num_comments": 1,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587842285,
+        "_tags": [
+          "story",
+          "author_Meekro",
+          "story_22980563",
+          "ask_hn"
+        ],
+        "objectID": "22980563",
+        "_highlightResult": {
+          "title": {
+            "value": "Ask HN: Why do distros ship old software?",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "Meekro",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "story_text": {
+            "value": "Why do the most popular Linux distros ship old software? Some distros will even go so far as to create their own custom patches to fix bugs in older versions of software instead of just pushing out the latest version. I can understand when it's the kernel and they want to avoid upgrading too often, but why do they do this for packages like Apache, or MySQL, or Ruby? Why do they call those old versions stable? Surely the latest release from the developers would be more &quot;stable&quot; than a 2-year-old version with some backported security fixes.",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T19:02:34.000Z",
+        "title": "WHO says there's 'no evidence' that recovered Covid-19 patients are immune",
+        "url": "https://www.mprnews.org/story/2020/04/25/npr-no-evidence-that-recovered-covid-19-patients-are-immune-who-says",
+        "author": "ilamont",
+        "points": 5,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 1,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587841354,
+        "_tags": [
+          "story",
+          "author_ilamont",
+          "story_22980434"
+        ],
+        "objectID": "22980434",
+        "_highlightResult": {
+          "title": {
+            "value": "WHO says there's 'no evidence' that recovered Covid-19 patients are immune",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://www.mprnews.org/story/2020/04/25/npr-no-evidence-that-recovered-covid-19-patients-are-immune-who-says",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "ilamont",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T19:01:33.000Z",
+        "title": "Trump signs internet privacy repeal",
+        "url": "https://thehill.com/homenews/administration/327107-trump-signs-internet-privacy-repeal",
+        "author": "joeyespo",
+        "points": 5,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 6,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587841293,
+        "_tags": [
+          "story",
+          "author_joeyespo",
+          "story_22980424"
+        ],
+        "objectID": "22980424",
+        "_highlightResult": {
+          "title": {
+            "value": "Trump signs internet privacy repeal",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://thehill.com/homenews/administration/327107-trump-signs-internet-privacy-repeal",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "joeyespo",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T19:00:22.000Z",
+        "title": "My experience with the CARES Act",
+        "url": "https://techcrunch.com/2020/04/24/my-experience-with-the-cares-act-was-frustrating-confusing-and-unfair/",
+        "author": "MLEnthusiast",
+        "points": 32,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 18,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587841222,
+        "_tags": [
+          "story",
+          "author_MLEnthusiast",
+          "story_22980410",
+          "front_page"
+        ],
+        "objectID": "22980410",
+        "_highlightResult": {
+          "title": {
+            "value": "My experience with the CARES Act",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://techcrunch.com/2020/04/24/my-experience-with-the-cares-act-was-frustrating-confusing-and-unfair/",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "MLEnthusiast",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T18:57:31.000Z",
+        "title": "Ask HN: Best API gateways with user access and monetization?",
+        "url": null,
+        "author": "melenaboija",
+        "points": 8,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 1,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587841051,
+        "_tags": [
+          "story",
+          "author_melenaboija",
+          "story_22980380",
+          "ask_hn"
+        ],
+        "objectID": "22980380",
+        "_highlightResult": {
+          "title": {
+            "value": "Ask HN: Best API gateways with user access and monetization?",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "melenaboija",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T18:54:56.000Z",
+        "title": "Ask HN: Balsamiq vs. Invision vs. Justinmind vs. Axure vs. XD?",
+        "url": null,
+        "author": "rckoepke",
+        "points": 2,
+        "story_text": "I&#x27;m looking to learn a new frontend prototyping or wireframing product. Some on my &quot;short list&quot; are:<p>- balsamiq \n - axure \n - adobe xd \n - justinmind \n - invision \n - figma<p>What are your favorites for single-man or small-team projects? What should I know about each from your experience? I&#x27;m fairly certain I&#x27;ll be using it for a React webpage and complementary React Native apps for iOS and Android.",
+        "comment_text": null,
+        "num_comments": 2,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587840896,
+        "_tags": [
+          "story",
+          "author_rckoepke",
+          "story_22980357",
+          "ask_hn"
+        ],
+        "objectID": "22980357",
+        "_highlightResult": {
+          "title": {
+            "value": "Ask HN: Balsamiq vs. Invision vs. Justinmind vs. Axure vs. XD?",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "rckoepke",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "story_text": {
+            "value": "I'm looking to learn a new frontend prototyping or wireframing product. Some on my &quot;short list&quot; are:<p>- balsamiq \n - axure \n - adobe xd \n - justinmind \n - invision \n - figma<p>What are your favorites for single-man or small-team projects? What should I know about each from your experience? I'm fairly certain I'll be using it for a React webpage and complementary React Native apps for iOS and Android.",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T18:51:57.000Z",
+        "title": "Ask HN: Is Copy and Paste a workaround for paywalls",
+        "url": null,
+        "author": "ipsocannibal",
+        "points": 1,
+        "story_text": "The following is present in the Hacker News FAQ:<p>&quot;Are paywalls ok?<p>It&#x27;s ok to post stories from sites with paywalls that have workarounds.<p>In comments, it&#x27;s ok to ask how to read an article and to help other users do so. But please don&#x27;t post complaints about paywalls. Those are off topic.&quot;<p>So is copying and pasting the content to a paste and adding a link to the comments a workaround?<p>See https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=22978882#22979942 for where this question arose.",
+        "comment_text": null,
+        "num_comments": 1,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587840717,
+        "_tags": [
+          "story",
+          "author_ipsocannibal",
+          "story_22980334",
+          "ask_hn"
+        ],
+        "objectID": "22980334",
+        "_highlightResult": {
+          "title": {
+            "value": "Ask HN: Is Copy and Paste a workaround for paywalls",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "ipsocannibal",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "story_text": {
+            "value": "The following is present in the Hacker News FAQ:<p>&quot;Are paywalls ok?<p>It's ok to post stories from sites with paywalls that have workarounds.<p>In comments, it's ok to ask how to read an article and to help other users do so. But please don't post complaints about paywalls. Those are off topic.&quot;<p>So is copying and pasting the content to a paste and adding a link to the comments a workaround?<p>See https://news.ycombinator.com/item?id=22978882#22979942 for where this question arose.",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T18:46:37.000Z",
+        "title": "We Were Forced to Close Our Business and the Reason Will Surprise You",
+        "url": "https://www.kentuckymoonbow.com/blog/url-9wj2b",
+        "author": "wsieroci",
+        "points": 3,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 1,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587840397,
+        "_tags": [
+          "story",
+          "author_wsieroci",
+          "story_22980292"
+        ],
+        "objectID": "22980292",
+        "_highlightResult": {
+          "title": {
+            "value": "We Were Forced to Close Our Business and the Reason Will Surprise You",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://www.kentuckymoonbow.com/blog/url-9wj2b",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "wsieroci",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T18:45:41.000Z",
+        "title": "Coronavirus: Woman named, shamed by neighbors on Facebook for not joining clap",
+        "url": "https://news.sky.com/story/coronavirus-woman-named-and-shamed-by-neighbours-on-facebook-for-not-joining-clap-for-carers-11978192",
+        "author": "downerending",
+        "points": 4,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 1,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587840341,
+        "_tags": [
+          "story",
+          "author_downerending",
+          "story_22980282"
+        ],
+        "objectID": "22980282",
+        "_highlightResult": {
+          "title": {
+            "value": "Coronavirus: Woman named, shamed by neighbors on Facebook for not joining clap",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://news.sky.com/story/coronavirus-woman-named-and-shamed-by-neighbours-on-facebook-for-not-joining-clap-for-carers-11978192",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "downerending",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T18:30:44.000Z",
+        "title": "A friendly web development tutorial for complete beginners",
+        "url": "https://www.internetingishard.com/",
+        "author": "_ttg",
+        "points": 15,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 1,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587839444,
+        "_tags": [
+          "story",
+          "author__ttg",
+          "story_22980128"
+        ],
+        "objectID": "22980128",
+        "_highlightResult": {
+          "title": {
+            "value": "A friendly web development tutorial for complete beginners",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://www.internetingishard.com/",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "_ttg",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T18:28:46.000Z",
+        "title": "U.S. Reels Toward Meat Shortages and the World May Be Next",
+        "url": "https://www.bloomberg.com/news/articles/2020-04-24/meat-threats-grow-with-first-brazil-shutdown-u-s-turkey-halt",
+        "author": "JumpCrisscross",
+        "points": 5,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 2,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587839326,
+        "_tags": [
+          "story",
+          "author_JumpCrisscross",
+          "story_22980113"
+        ],
+        "objectID": "22980113",
+        "_highlightResult": {
+          "title": {
+            "value": "U.S. Reels Toward Meat Shortages and the World May Be Next",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://www.bloomberg.com/news/articles/2020-04-24/meat-threats-grow-with-first-brazil-shutdown-u-s-turkey-halt",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "JumpCrisscross",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T18:25:28.000Z",
+        "title": "Dr. Zev Zelenko Addresses Chloroquine/Zinc/ZPAK Critics",
+        "url": "https://soundcloud.com/kmcradio/kevin-mccullough-dr-zev-zelenkos-chloroquine-critics-update",
+        "author": "giardini",
+        "points": 1,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 2,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587839128,
+        "_tags": [
+          "story",
+          "author_giardini",
+          "story_22980093"
+        ],
+        "objectID": "22980093",
+        "_highlightResult": {
+          "title": {
+            "value": "Dr. Zev Zelenko Addresses Chloroquine/Zinc/ZPAK Critics",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://soundcloud.com/kmcradio/kevin-mccullough-dr-zev-zelenkos-chloroquine-critics-update",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "giardini",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T18:18:43.000Z",
+        "title": "Our love of the cloud is making a green energy future impossible",
+        "url": "https://techcrunch.com/2020/04/25/our-love-of-the-cloud-is-making-a-green-energy-future-impossible/",
+        "author": "ptcampbell",
+        "points": 3,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 1,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587838723,
+        "_tags": [
+          "story",
+          "author_ptcampbell",
+          "story_22980015"
+        ],
+        "objectID": "22980015",
+        "_highlightResult": {
+          "title": {
+            "value": "Our love of the cloud is making a green energy future impossible",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://techcrunch.com/2020/04/25/our-love-of-the-cloud-is-making-a-green-energy-future-impossible/",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "ptcampbell",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T18:16:55.000Z",
+        "title": "A Graduate Course in Applied Cryptography",
+        "url": "https://toc.cryptobook.us/",
+        "author": "spking",
+        "points": 32,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 2,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587838615,
+        "_tags": [
+          "story",
+          "author_spking",
+          "story_22980003",
+          "front_page"
+        ],
+        "objectID": "22980003",
+        "_highlightResult": {
+          "title": {
+            "value": "A Graduate Course in Applied Cryptography",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://toc.cryptobook.us/",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "spking",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T18:12:56.000Z",
+        "title": "When is a Startup ready to start growing their audience and user base?",
+        "url": null,
+        "author": "theParzival",
+        "points": 1,
+        "story_text": "Hi all,<p>I was here thinking, when is a Startup ready to start growing their audience and user base? After their seed round? After more mature rounds like Series A?<p>Until then what do they do? Product development and talk to potential users?<p>I was wondering, not all startups are equal. Some get out from YC ready to explode, others keep on stealth mode some more months&#x2F;years, and others simply die.<p>What do you think?",
+        "comment_text": null,
+        "num_comments": 1,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587838376,
+        "_tags": [
+          "story",
+          "author_theParzival",
+          "story_22979970"
+        ],
+        "objectID": "22979970",
+        "_highlightResult": {
+          "title": {
+            "value": "When is a Startup ready to start growing their audience and user base?",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "theParzival",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "story_text": {
+            "value": "Hi all,<p>I was here thinking, when is a Startup ready to start growing their audience and user base? After their seed round? After more mature rounds like Series A?<p>Until then what do they do? Product development and talk to potential users?<p>I was wondering, not all startups are equal. Some get out from YC ready to explode, others keep on stealth mode some more months/years, and others simply die.<p>What do you think?",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T18:06:13.000Z",
+        "title": "Millions of credit-card customers can’t pay their bills",
+        "url": "https://www.wsj.com/articles/millions-of-credit-card-customers-cant-pay-their-bills-lenders-are-bracing-for-impact-11587807001",
+        "author": "JumpCrisscross",
+        "points": 137,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 310,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587837973,
+        "_tags": [
+          "story",
+          "author_JumpCrisscross",
+          "story_22979929"
+        ],
+        "objectID": "22979929",
+        "_highlightResult": {
+          "title": {
+            "value": "Millions of credit-card customers can’t pay their bills",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://www.wsj.com/articles/millions-of-credit-card-customers-cant-pay-their-bills-lenders-are-bracing-for-impact-11587807001",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "JumpCrisscross",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T17:57:18.000Z",
+        "title": "Show HN: Academic research group website template (React/Bootstrap)",
+        "url": "https://github.com/csdl/csdl.github.io",
+        "author": "philipmjohnson",
+        "points": 2,
+        "story_text": null,
+        "comment_text": null,
+        "num_comments": 1,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587837438,
+        "_tags": [
+          "story",
+          "author_philipmjohnson",
+          "story_22979860",
+          "show_hn"
+        ],
+        "objectID": "22979860",
+        "_highlightResult": {
+          "title": {
+            "value": "Show HN: Academic research group website template (React/Bootstrap)",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "url": {
+            "value": "https://github.com/csdl/csdl.github.io",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "philipmjohnson",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      },
+      {
+        "created_at": "2020-04-25T17:54:55.000Z",
+        "title": "AWS deep-dive: How a news aggregator collects and serves up news articles",
+        "url": null,
+        "author": "budilov",
+        "points": 8,
+        "story_text": "Hey guys,<p>For today&#x27;s AWS Deep Dive I&#x27;ve interviewed the creators of a news aggregator and conducted an architecture review of their design.<p>https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=XaO8BBgBRH0<p>Thanks,<p>Vladimir<p>P.S. Let me know what else you&#x27;d like me to make",
+        "comment_text": null,
+        "num_comments": 1,
+        "story_id": null,
+        "story_title": null,
+        "story_url": null,
+        "parent_id": null,
+        "created_at_i": 1587837295,
+        "_tags": [
+          "story",
+          "author_budilov",
+          "story_22979838"
+        ],
+        "objectID": "22979838",
+        "_highlightResult": {
+          "title": {
+            "value": "AWS deep-dive: How a news aggregator collects and serves up news articles",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "author": {
+            "value": "budilov",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "story_text": {
+            "value": "Hey guys,<p>For today's AWS Deep Dive I've interviewed the creators of a news aggregator and conducted an architecture review of their design.<p>https://www.youtube.com/watch?v=XaO8BBgBRH0<p>Thanks,<p>Vladimir<p>P.S. Let me know what else you'd like me to make",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        }
+      }
+    ],
+    "nbHits": 619431,
+    "page": 1,
+    "nbPages": 50,
+    "hitsPerPage": 20,
+    "exhaustiveNbHits": false,
+    "query": "",
+    "params": "advancedSyntax=true&analytics=true&analyticsTags=backend&numericFilters=points%3E0%2Cnum_comments%3E0&page=1",
+    "processingTimeMS": 14
+  }
