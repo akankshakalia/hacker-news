@@ -13,13 +13,8 @@ module.exports = {
         filename: 'main.js'
     },
     devServer: {
-        historyApiFallback: true,
-        disableHostCheck: true,
         port: process.env.PORT,
-        contentBase: path.resolve(__dirname, 'dist'),
-        headers: {
-            "Access-Control-Allow-Origin": "*"
-        }
+        contentBase: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
@@ -46,6 +41,14 @@ module.exports = {
                     },
                 ],
             },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                  {
+                    loader: 'file-loader',
+                  },
+                ],
+              },
         ]
     },
     plugins: [htmlPlugin]

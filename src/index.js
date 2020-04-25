@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-const App = () => {
-  return <div>Hacker News</div>;
-};
+import App from './containers/App';
 
-ReactDOM.render(<App />, document.getElementById("index"));
+ReactDOM.render(<App />, document.getElementById('root'));
