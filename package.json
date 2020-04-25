@@ -4,7 +4,7 @@
   "description": "Hacker News React App",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode development",
+    "start": "webpack-dev-server --host 0.0.0.0 --inline --content-base .",
     "start:dev": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"
   },
