@@ -1,7 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
