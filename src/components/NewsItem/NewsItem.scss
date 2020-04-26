@@ -4,11 +4,21 @@ $width: 30px;
     text-align: justify;
     @media only screen and (min-width: 1080px) {
         height: 30px;
+        div.comments-xs,div.points-xs{
+            display: none;
+        }
     }
     @media only screen and (max-width: 1080px) {
         display: flex;
         align-items: stretch;
         flex-wrap: wrap;
+        div.comments,div.points{
+            display: none;
+        }
+        div.comments-xs, div.points-xs{
+            display: block;
+        }
+
     }
     div{
         margin: 2px;
@@ -20,6 +30,12 @@ $width: 30px;
     }
     div.points{
         width: 5%;
+        text-align: center;
+    }
+    div.comments-xs{
+        text-align: center;
+    }
+    div.points-xs{
         text-align: center;
     }
     div.title{

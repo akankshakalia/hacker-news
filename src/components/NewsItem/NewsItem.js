@@ -13,15 +13,16 @@ class NewsItem extends Component {
     this.hide = this.hide.bind(this)
   }
 
-  getPointsColorCode (value) {
+  getPointsColorCode (value, xs) {
+    const style = `points${xs}`
     if (value < 50) {
-      return 'points black'
+      return `${style} black`
     } else if (value < 75) {
-      return 'points darkred'
+      return `${style} darkred`
     } else if (value < 100) {
-      return 'points red'
+      return `${style} red`
     } else {
-      return 'points orange'
+      return `${style} orange`
     }
   }
 
@@ -40,13 +41,18 @@ class NewsItem extends Component {
     url = url ? url[2].replace('www.', '') : null
     return <div className={`news-item ${this.rowIndex % 2 === 0 ? 'even' : 'odd'}`}>
       <div className="comments" title="Comments">{this.data.num_comments}</div>
-      <div className={this.getPointsColorCode(this.data.points)} title="Points">
+      <div className={this.getPointsColorCode(this.data.points,'')} title="Points">
         {this.data.points}
         <div className="arrow-up" title="Upvote" onClick={() => { this.upVoteNews(this.data.objectID) }}></div>
       </div>
       <div className="title" title="Title">{this.data.title}</div>
       <div className="url" title="Link"><a href={this.data.url}>({url})</a></div>
       <div className="author" title="Author"><label className="prefix">by </label> {this.data.author}</div>
+      <div className="comments-xs" title="Comments">{this.data.num_comments}</div>
+      <div className={this.getPointsColorCode(this.data.points,'-xs')} title="Points">
+        {this.data.points}
+        <div className="arrow-up" title="Upvote" onClick={() => { this.upVoteNews(this.data.objectID) }}></div>
+      </div>
       <div className="time" title="When">{diffText}</div>
       <div className="hide" onClick={() => { this.hide(this.data.objectID) }}>[<label className="title">hide</label>]</div>
     </div>
