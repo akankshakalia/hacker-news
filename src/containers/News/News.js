@@ -3,6 +3,7 @@ import './News.scss'
 import NewsItem from '../../components/NewsItem/NewsItem'
 import { Context } from '../../context/NewsContext'
 import { updatePage, getPage } from '../../services/LocalStorage'
+import Chart from '../../components/LineChart/LineChart'
 class News extends Component {
   componentDidMount () {
     const page = getPage() || 1
@@ -34,6 +35,7 @@ class News extends Component {
           ? <div className="more" onClick={this.onNext.bind(this)}>More</div>
           : null
       }
+      <Chart />
     </div>
   }
 }
