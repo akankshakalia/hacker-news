@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
-import './Create.scss';
+import React, { Component } from 'react'
+import './Create.scss'
 
-class CreateNews extends Component{
-    render(){
-        return <div className="create-news">
+class CreateNews extends Component {
+  render () {
+    return <div className="create-news">
             Create News
-        </div>
-    }
+    </div>
+  }
 }
 
-export default CreateNews;
+export default CreateNews

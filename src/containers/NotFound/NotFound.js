@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
-import './NotFound.scss';
+import React, { Component } from 'react'
+import './NotFound.scss'
 
-class NotFound extends Component{
-    render(){
-        return <div className="create-news">
+class NotFound extends Component {
+  render () {
+    return <div className="create-news">
             Page Not Found
-        </div>
-    }
+    </div>
+  }
 }
 
-export default NotFound;
+export default NotFound
