@@ -5,6 +5,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
@@ -56,7 +57,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader'
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
                 test: /\.s[ac]ss$/i,
@@ -90,12 +91,13 @@ module.exports = {
           new ManifestPlugin(),
           new CompressionPlugin({
             filename: '[path].br[query]',
-            algorithm: 'brotliCompress',
+            algorithm: 'gzip',
             test: /\.(js|css|scss|gif|html|svg)$/,
-            compressionOptions: { level: 11 },
+            compressionOptions: { level: 9 },
             threshold: 10240,
             minRatio: 0.8,
             deleteOriginalAssets: false,
           }),
+          new MiniCssExtractPlugin()
     ]
 };
