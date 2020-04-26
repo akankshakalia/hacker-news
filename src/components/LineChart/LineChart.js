@@ -6,9 +6,9 @@ import Chart from 'react-google-charts'
 class LineChart extends Component {
   render () {
     const { state } = this.context
-    const data = state.hits.map((item) => {
+    const data = state ? state.hits.map((item) => {
       return [item.objectID, item.points]
-    })
+    }) : []
     data.unshift(['ID', 'Votes'])
 
     const options = {
@@ -37,13 +37,15 @@ class LineChart extends Component {
 
     }
     return <div className="chart">
-      <Chart
-        chartType="LineChart"
-        width="100%"
-        height="500px"
-        data={data}
-        options={options}
-      />
+      { state && state.hits.length
+        ? <Chart
+          chartType="LineChart"
+          width="100%"
+          height="500px"
+          data={data}
+          options={options}
+        />
+        : null }
     </div>
   }
 }

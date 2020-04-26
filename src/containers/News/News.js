@@ -25,13 +25,13 @@ class News extends Component {
     const loaderTemplate = <div className="loading">Loading...</div>
     const errorTemplate = <div className="loading">Please try again later!!!</div>
     return <div className="news">
-      {!state.hits.length ? (state.error ? errorTemplate : loaderTemplate)
+      {!(state && state.hits.length) ? ((state && state.error) ? errorTemplate : loaderTemplate)
         : state.hits.map((item, index) => {
           return <NewsItem key={item.objectID} item={item} rowIndex={index}/>
         })
       }
       {
-        state.hits.length && this.context.state.page !== (this.context.state.nbPages - 1)
+        (state && state.hits.length) && this.context.state.page !== (this.context.state.nbPages - 1)
           ? <div className="more" onClick={this.onNext.bind(this)}>More</div>
           : null
       }
