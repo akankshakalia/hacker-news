@@ -26,7 +26,7 @@ class NewsItem extends Component {
   }
 
   upVoteNews (id) {
-    this.context.upVote(upVote(id), ()=>{})
+    this.context.upVote(upVote(id), () => {})
   }
 
   hide (id) {

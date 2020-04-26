@@ -1,16 +1,15 @@
 
-const setLocalStorage=(key, value)=>{
+const setLocalStorage = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value))
 }
 
-const getLocalStorage=(key)=>{
+const getLocalStorage = (key) => {
   const data = localStorage.getItem(key)
-  return data ? JSON.parse(data) : null;
+  return data ? JSON.parse(data) : null
 }
 
-
 export const updatePage = (page) => {
-  setLocalStorage('page', {num: page} )
+  setLocalStorage('page', { num: page })
 }
 
 export const getPage = () => {
@@ -27,7 +26,7 @@ export const getVotedItems = () => {
 
 export const hideNews = (id) => {
   const items = getLocalStorage('hidden-news') || []
-  const found = items.find(item=>item===id)
+  const found = items.find(item => item === id)
   if (!found) {
     items.push(id)
   }
@@ -47,5 +46,5 @@ export const upVote = (id) => {
     items.push({ id: id, points: 1 })
   }
   setLocalStorage('voted-news', items)
-  return items.find(item=>item.id===id)
+  return items.find(item => item.id === id)
 }
