@@ -2,7 +2,14 @@ $font-size: 12px;
 $width: 30px;
 .news-item{
     text-align: justify;
-    height: 30px;
+    @media only screen and (min-width: 1080px) {
+        height: 30px;
+    }
+    @media only screen and (max-width: 1080px) {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
     div{
         margin: 2px;
         display: inline-block;

@@ -1,6 +1,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
@@ -15,36 +16,28 @@ const uglifyPlugin = new UglifyJSPlugin({
 });
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: { main: './src/index.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.[hash].js'
     },
-    // performance: {
-    //     hints: "warning"
-    //   },
-    //   optimization: {
-    //     splitChunks: {
-    //       minSize: 10000,
-    //       maxSize: 250000,
-    //     }
-    // },
     devServer: {
         historyApiFallback: true,
         disableHostCheck: true,
         port: process.env.PORT,
         contentBase: path.resolve(__dirname, 'dist')
     },
+    
     module: {
         rules: [
-            // {
-            //     enforce: 'pre',
-            //     test: /\.js$/,
-            //     exclude: [/node_modules/, /\.test.js$/],
-            //     loader: 'eslint-loader',
+            {
+                enforce: 'pre',
+                test: /\.js$/,
+                exclude: [/node_modules/, /\.test.js$/],
+                loader: 'eslint-loader',
         
-            // },
+            },
             {
                 test: /\.js$/,
                 exclude: [/node_modules/, /\.test.js$/],

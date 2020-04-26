@@ -15,7 +15,7 @@ class Header extends Component {
 
   render () {
     return <div className="header">
-      <img src={logo} lt="Logo"/>
+      <img src={logo} alt="Logo"/>
       <nav>
         <ul>
           <li><a onClick={this.onTopClick.bind(this)} className={this.props.location.pathname === '/' ? 'active' : ''}>top</a></li>
