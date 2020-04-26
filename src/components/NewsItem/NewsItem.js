@@ -25,8 +25,10 @@ class NewsItem extends Component{
         url = url? url[2].replace('www.',''): null;
         return <div className="news-item">
             <div className="comments" title="Comments">{this.data.num_comments}</div>
-            <div className={this.getPointsColorCode(this.data.points)} title="Points">{this.data.points}</div>
-            <div class="arrow-up" title="Upvote"></div>
+            <div className={this.getPointsColorCode(this.data.points)} title="Points">
+                {this.data.points}
+                <div class="arrow-up" title="Upvote"></div>
+            </div>
             <div className="title" title="Title">{this.data.title}</div>
             <div className="url" title="Link"><a href={this.data.url}>({url})</a></div>
             <div className="author" title="Author"><label className="prefix">by </label> {this.data.author}</div>

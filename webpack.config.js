@@ -15,6 +15,7 @@ const uglifyPlugin = new UglifyJSPlugin({
 });
 
 module.exports = {
+    mode: 'production',
     entry: { main: './src/index.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
