@@ -18,10 +18,15 @@ export const newsReducer = (state, action) => {
         ...state,
         error: action.payload
       }
-    case 'reset_page':
+      case 'upvote':
+      const hits = state.hits
+      hits.forEach(item => {
+        if(item.objectID === action.payload.id)
+        item.points = item.points + 1
+      });
       return {
         ...state,
-        paage: action.payload
+         hits
       }
     default:
       return state

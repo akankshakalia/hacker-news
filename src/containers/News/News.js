@@ -2,19 +2,19 @@ import React, { Component } from 'react'
 import './News.scss'
 import NewsItem from '../../components/NewsItem/NewsItem'
 import { Context } from '../../context/NewsContext'
-import { updatePage } from '../../services/LocalStorage'
+import { updatePage, getPage } from '../../services/LocalStorage'
 class News extends Component {
   componentDidMount () {
-    const page = localStorage.getItem('page') || 1
-    this.context.fetch(page, (page) => {
-      updatePage(page)
+    const page = getPage() || 1
+    this.context.fetch(page, (newPage) => {
+      updatePage(newPage)
     })
   }
 
   onNext () {
     if (this.context.state.page < this.context.state.nbPages) {
-      this.context.fetch(this.context.state.page + 1, (page) => {
-        updatePage(page)
+      this.context.fetch(this.context.state.page + 1, (newPage) => {
+        updatePage(newPage)
       })
     }
   }
