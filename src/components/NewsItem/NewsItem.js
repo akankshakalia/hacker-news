@@ -7,6 +7,7 @@ class NewsItem extends Component {
   constructor (props) {
     super(props)
     this.data = props.item
+    this.rowIndex = props.rowIndex
   }
 
   getPointsColorCode (value) {
@@ -26,7 +27,7 @@ class NewsItem extends Component {
     const diffText = diff > 60 ? formatDistance(diff, 'hour') : formatDistance(diff, 'min')
     let url = this.data.url ? this.data.url.split('/') : null
     url = url ? url[2].replace('www.', '') : null
-    return <div className="news-item">
+    return <div className={`news-item ${this.rowIndex % 2 === 0 ? 'even' : 'odd'}`}>
       <div className="comments" title="Comments">{this.data.num_comments}</div>
       <div className={this.getPointsColorCode(this.data.points)} title="Points">
         {this.data.points}
@@ -42,7 +43,8 @@ class NewsItem extends Component {
 }
 
 NewsItem.propTypes = {
-  item: PropTypes.any
+  item: PropTypes.any,
+  rowIndex: PropTypes.any
 }
 
 export default NewsItem

@@ -69,4 +69,11 @@ $width: 30px;
     content: '';
     width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
     display: inline-block;
-  }
+}
+
+.even{
+    background-color: rgb(246, 246, 239);
+}
+.odd{
+    background-color: rgb(224, 224, 215);
+}
