@@ -1,6 +1,10 @@
+const webpack = require('webpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const WebpackMd5Hash = require('webpack-md5-hash');
+const ManifestPlugin = require('webpack-manifest-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
@@ -19,7 +23,8 @@ module.exports = {
     entry: { main: './src/index.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.[hash].js'
+        filename: '[name].[chunkhash].js',
+        chunkFilename: '[name].[chunkhash].js'
     },
     devServer: {
         historyApiFallback: true,
@@ -27,7 +32,12 @@ module.exports = {
         port: process.env.PORT,
         contentBase: path.resolve(__dirname, 'dist')
     },
-    
+    optimization: {
+        runtimeChunk: true,
+        splitChunks: {
+          chunks: 'all',
+        }
+    },
     module: {
         rules: [
             {
@@ -74,5 +84,18 @@ module.exports = {
               },
         ]
     },
-    plugins: [htmlPlugin, uglifyPlugin]
+    plugins: [
+        htmlPlugin, uglifyPlugin,
+          new WebpackMd5Hash(),
+          new ManifestPlugin(),
+          new CompressionPlugin({
+            filename: '[path].br[query]',
+            algorithm: 'brotliCompress',
+            test: /\.(js|css|scss|gif|html|svg)$/,
+            compressionOptions: { level: 11 },
+            threshold: 10240,
+            minRatio: 0.8,
+            deleteOriginalAssets: false,
+          }),
+    ]
 };
