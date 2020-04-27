@@ -11,9 +11,24 @@
         "src": "ios.png",
         "sizes": "180x180",
         "type": "image/png"
+      },
+      {
+        "src": "iphone.png",
+        "sizes": "114x114",
+        "type": "image/png"
+      },
+      {
+        "src": "ripad.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "ipad.png",
+        "sizes": "72x72",
+        "type": "image/png"
       }
     ],
-    "start_url": "./index.html",
+    "start_url": "./index.html/",
     "display": "standalone",
     "theme_color": "#ffffff",
     "background_color": "#ffffff"
