@@ -4,11 +4,16 @@ $width: 30px;
     text-align: justify;
     @media only screen and (min-width: 1080px) {
         height: 30px;
-        div.comments-xs,div.points-xs{
+        div.comments-xs,div.points-xs,div.xs-block{
             display: none;
+        }
+        div{
+            margin: 2px;
+            display: inline-block;
         }
     }
     @media only screen and (max-width: 1080px) {
+        padding: 10px;
         display: flex;
         align-items: stretch;
         flex-wrap: wrap;
@@ -17,13 +22,24 @@ $width: 30px;
         }
         div.comments-xs, div.points-xs{
             display: block;
+            font-size: $font-size;
+            width: 10%
+        }
+        div.url{
+            margin-right: 30px;
+        }
+        div.title,div.xs-block,div.sm-block{
+            display: flex;align-items: stretch;
+            width: 100%;
+            margin-bottom: 1%;
+        }
+        div.xs-block{
+            
+            font-size: $font-size;
         }
 
     }
-    div{
-        margin: 2px;
-        display: inline-block;
-    }
+
     div.comments{
         width: 5%;
         text-align: center;
@@ -32,14 +48,7 @@ $width: 30px;
         width: 5%;
         text-align: center;
     }
-    div.comments-xs{
-        text-align: center;
-    }
-    div.points-xs{
-        text-align: center;
-    }
-    div.title{
-    }
+
     div.url{
         a{
             color:gray;

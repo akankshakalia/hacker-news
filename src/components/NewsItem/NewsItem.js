@@ -46,10 +46,15 @@ class NewsItem extends Component {
         <div className="arrow-up" title="Upvote" onClick={() => { this.upVoteNews(this.data.objectID) }}></div>
       </div>
       <div className="title" title="Title">{this.data.title}</div>
-      <div className="url" title="Link"><a href={this.data.url}>({url})</a></div>
-      <div className="author" title="Author"><label className="prefix">by </label> {this.data.author}</div>
-      <div className="comments-xs" title="Comments">{this.data.num_comments}</div>
-      <div className={this.getPointsColorCode(this.data.points, '-xs')} title="Points">
+      <div className="sm-block">
+        <div className="url" title="Link"><a href={this.data.url}>({url})</a></div>
+        <div className="author" title="Author"><label className="prefix">by </label> {this.data.author}</div>
+      </div>
+      <div className="xs-block">
+        <div className="comments-xs" title="Comments">{this.data.num_comments}</div>
+        <div className={this.getPointsColorCode(this.data.points, '-xs')} title="Points">
+        </div>
+
         {this.data.points}
         <div className="arrow-up" title="Upvote" onClick={() => { this.upVoteNews(this.data.objectID) }}></div>
       </div>
