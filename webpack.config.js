@@ -6,7 +6,6 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const htmlPlugin = new HtmlWebPackPlugin({
@@ -26,6 +25,7 @@ module.exports = {
     entry: { main: './src/index.js' },
     output: {
         path: path.resolve(__dirname, 'public'),
+        //filename: 'main.js',
         filename: '[name].[chunkhash].js',
         chunkFilename: '[name].[chunkhash].js'
     },
@@ -84,7 +84,7 @@ module.exports = {
                     loader: 'file-loader',
                   },
                 ],
-              },
+              }
         ]
     },
     plugins: [
@@ -108,14 +108,6 @@ module.exports = {
             deleteOriginalAssets: false,
           }),
           new MiniCssExtractPlugin(),
-          new SWPrecacheWebpackPlugin({
-            cacheId: 'hacker-news-app',
-            dontCacheBustUrlsMatching: /\.\w{8}\./,
-            filename: 'service-worker.js',
-            minify: true,
-            navigateFallback: '/index.html',
-            staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
-          }),
           new CopyWebpackPlugin([
             { from: 'src/pwa' }, // define the path of the files to be copied
           ])

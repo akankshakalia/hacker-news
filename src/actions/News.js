@@ -14,7 +14,7 @@ export const fetch = dispatch => {
       const data = {
         hits: removedItems,
         page: response.data.page,
-        nbPages: response.data.page
+        nbPages: response.data.nbPages
       }
 
       data.hits.forEach(item => {
