@@ -2,6 +2,11 @@
     "short_name": "Hacker News PWA",
     "name": "Hacker News App",
     "icons": [
+    {
+        "src": "favicon.ico",
+        "sizes": "16x16",
+        "type": "image/x-icon"
+    },
       {
         "src": "logo.png",
         "sizes": "512x512",
@@ -28,7 +33,7 @@
         "type": "image/png"
       }
     ],
-    "start_url": "./index.html/",
+    "start_url": ".",
     "display": "standalone",
     "theme_color": "#ffffff",
     "background_color": "#ffffff"

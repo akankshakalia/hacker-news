@@ -6,7 +6,7 @@ export const fetch = dispatch => {
     let pageNum = 1
     try {
       dispatch({ type: 'error', payload: null })
-      const response = await yelp.get(`/search_by_date?page=${page}&numericFilters=points>0,num_comments>0`)
+      const response = await yelp.get(`/search_by_date?numericFilters=points>0,num_comments>0&page=${page}`)
       response.data.hits.splice(getHiddenItems().findIndex(v => v.name === 'Kristian'), 1)
       response.data.hits.forEach(item => {
         const found = getVotedItems().find(voted => voted.id === item.objectID)

@@ -23,7 +23,7 @@ class News extends Component {
   render () {
     const { state } = this.context
     const loaderTemplate = <div className="loading">Loading...</div>
-    const errorTemplate = <div className="loading">Please try again later!!!</div>
+    const errorTemplate = <div className="loading">{ state && state.error ? (state.error.message === 'Network Error' ? 'You are offline!' : 'Please try again later!') : 'Please try again later!'}</div>
     return <div className="news">
       {!(state && state.hits.length) ? ((state && state.error) ? errorTemplate : loaderTemplate)
         : state.hits.map((item, index) => {

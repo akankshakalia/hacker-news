@@ -18,7 +18,7 @@ class Header extends Component {
       <img src={logo} alt="Logo"/>
       <nav>
         <ul>
-          <li><a onClick={this.onTopClick.bind(this)} className={this.props.location.pathname === '/' ? 'active' : ''}>top</a></li>
+          <li><a onClick={this.onTopClick.bind(this)} className={'active'}>top</a></li>
           <li>|</li>
           <li><a>new</a></li>
         </ul>
