@@ -6,6 +6,11 @@ import './Header.scss'
 import { Context } from '../../context/NewsContext'
 import { updatePage } from '../../services/LocalStorage'
 class Header extends Component {
+  constructor (props) {
+    super(props)
+    this.onTopClick = this.onTopClick.bind(this)
+  }
+
   onTopClick () {
     const page = 1
     this.context.fetch(page, () => {
@@ -18,7 +23,7 @@ class Header extends Component {
       <img src={logo} alt="Logo"/>
       <nav>
         <ul>
-          <li><a onClick={this.onTopClick.bind(this)} className={'active'}>top</a></li>
+          <li><a onClick={this.onTopClick} className={'active'}>top</a></li>
           <li>|</li>
           <li><a>new</a></li>
         </ul>

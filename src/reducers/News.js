@@ -1,10 +1,12 @@
+
+import { actions } from '../constants/default'
 export const initialState = {
   hits: [],
   page: 1
 }
 export const newsReducer = (state, action) => {
   switch (action.type) {
-    case 'fetch_news':
+    case actions.FETCH_NEWS:
       return {
         ...state,
         hits: action.payload.hits,
@@ -13,12 +15,12 @@ export const newsReducer = (state, action) => {
         hitsPerPage: action.payload.hitsPerPage,
         error: null
       }
-    case 'error':
+    case actions.ERROR:
       return {
         ...state,
         error: action.payload
       }
-    case 'upvote':
+    case actions.UPVOTE:
       state.hits.forEach(item => {
         if (item.objectID === action.payload.id) {
           item.points = item.points + 1
@@ -27,7 +29,7 @@ export const newsReducer = (state, action) => {
       return {
         ...state
       }
-    case 'hide-item':
+    case actions.HIDE_ITEM:
       return {
         ...state,
         hits: state.hits.filter((item) => { return item.objectID !== action.payload })
