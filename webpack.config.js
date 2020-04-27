@@ -6,6 +6,8 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
@@ -23,7 +25,7 @@ module.exports = {
     mode: 'production',
     entry: { main: './src/index.js' },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'public'),
         filename: '[name].[chunkhash].js',
         chunkFilename: '[name].[chunkhash].js'
     },
@@ -31,7 +33,7 @@ module.exports = {
         historyApiFallback: true,
         disableHostCheck: true,
         port: process.env.PORT,
-        contentBase: path.resolve(__dirname, 'dist')
+        contentBase: path.resolve(__dirname, 'public')
     },
     optimization: {
         runtimeChunk: true,
@@ -86,9 +88,16 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.LoaderOptionsPlugin({
+            options: {
+              context: __dirname,
+            },
+          }),
         htmlPlugin, uglifyPlugin,
           new WebpackMd5Hash(),
-          new ManifestPlugin(),
+          new ManifestPlugin({
+            fileName: 'asset-manifest.json'
+          }),
           new CompressionPlugin({
             filename: '[path].br[query]',
             algorithm: 'gzip',
@@ -98,6 +107,22 @@ module.exports = {
             minRatio: 0.8,
             deleteOriginalAssets: false,
           }),
-          new MiniCssExtractPlugin()
+          new MiniCssExtractPlugin(),
+          new SWPrecacheWebpackPlugin({
+            dontCacheBustUrlsMatching: /\.\w{8}\./,
+            filename: 'service-worker.js',
+            logger(message) {
+              if (message.indexOf('Total precache size is') === 0) {
+                return;
+              }
+              console.log(message);
+            },
+            minify: true,
+            navigateFallback: '/index.html',
+            staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+          }),
+          new CopyWebpackPlugin([
+            { from: 'src/pwa' }, // define the path of the files to be copied
+          ])
     ]
 };

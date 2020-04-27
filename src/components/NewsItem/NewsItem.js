@@ -41,7 +41,7 @@ class NewsItem extends Component {
     url = url ? url[2].replace('www.', '') : null
     return <div className={`news-item ${this.rowIndex % 2 === 0 ? 'even' : 'odd'}`}>
       <div className="comments" title="Comments">{this.data.num_comments}</div>
-      <div className={this.getPointsColorCode(this.data.points,'')} title="Points">
+      <div className={this.getPointsColorCode(this.data.points, '')} title="Points">
         {this.data.points}
         <div className="arrow-up" title="Upvote" onClick={() => { this.upVoteNews(this.data.objectID) }}></div>
       </div>
@@ -49,7 +49,7 @@ class NewsItem extends Component {
       <div className="url" title="Link"><a href={this.data.url}>({url})</a></div>
       <div className="author" title="Author"><label className="prefix">by </label> {this.data.author}</div>
       <div className="comments-xs" title="Comments">{this.data.num_comments}</div>
-      <div className={this.getPointsColorCode(this.data.points,'-xs')} title="Points">
+      <div className={this.getPointsColorCode(this.data.points, '-xs')} title="Points">
         {this.data.points}
         <div className="arrow-up" title="Upvote" onClick={() => { this.upVoteNews(this.data.objectID) }}></div>
       </div>
