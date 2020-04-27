@@ -27,6 +27,11 @@ export const newsReducer = (state, action) => {
       return {
         ...state
       }
+      case 'hide-item':
+      return {
+        ...state,
+        hits: state.hits.filter((item)=>{return item.objectID!==action.payload})
+      }
     default:
       return state
   }

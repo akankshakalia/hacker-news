@@ -109,14 +109,9 @@ module.exports = {
           }),
           new MiniCssExtractPlugin(),
           new SWPrecacheWebpackPlugin({
+            cacheId: 'hacker-news-app',
             dontCacheBustUrlsMatching: /\.\w{8}\./,
             filename: 'service-worker.js',
-            logger(message) {
-              if (message.indexOf('Total precache size is') === 0) {
-                return;
-              }
-              console.log(message);
-            },
             minify: true,
             navigateFallback: '/index.html',
             staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],

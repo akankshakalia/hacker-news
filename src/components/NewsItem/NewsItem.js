@@ -31,7 +31,7 @@ class NewsItem extends Component {
   }
 
   hide (id) {
-    hideNews(id)
+    this.context.hideItem(hideNews(id), () => {})
   }
 
   render () {
