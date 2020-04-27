@@ -31,7 +31,7 @@ export const hideNews = (id) => {
     items.push(id)
   }
   setLocalStorage('hidden-news', items)
-  return items.find(item=>id===item)
+  return items.find(item => id === item)
 }
 
 export const upVote = (id) => {

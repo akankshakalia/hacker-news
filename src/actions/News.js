@@ -8,7 +8,7 @@ export const fetch = dispatch => {
       dispatch({ type: 'error', payload: null })
       const response = await yelp.get(`/search_by_date?numericFilters=points>0,num_comments>0&page=${page}`)
       pageNum = (response && response.data) ? (response.data.page || 1) : 1
-      const removedItems = response.data.hits.filter((item)=>{
+      const removedItems = response.data.hits.filter((item) => {
         return !getHiddenItems().some(v => v === item.objectID)
       })
       const data = {
@@ -21,7 +21,7 @@ export const fetch = dispatch => {
         const found = getVotedItems().find(voted => voted.id === item.objectID)
         if (found) { item.points = item.points + found.points }
       })
-  
+
       dispatch({ type: 'fetch_news', payload: data })
     } catch (err) {
       dispatch({ type: 'error', payload: err })
