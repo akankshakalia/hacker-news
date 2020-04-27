@@ -70,9 +70,11 @@ $width: 30px;
     div.hide{
         .title{
             color:black;
+            cursor: pointer;
         }
         color:gray;
         font-size: $font-size;
+        cursor: pointer;
     }
     .orange{
         color: darkorange;
