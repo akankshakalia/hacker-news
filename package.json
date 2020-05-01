@@ -12,7 +12,8 @@
     "eslintf ": "eslint --fix",
     "test": "jest -u",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "pwa-asset-generator":"pwa-asset-generator src/pwa/logo.png ./ -t jpg -q 90 --splash-only --portrait-only"
   },
   "repository": {
     "type": "git",
@@ -60,6 +61,7 @@
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.0",
     "prop-types": "^15.7.2",
+    "pwa-asset-generator": "^2.3.0",
     "react-google-charts": "^3.0.15",
     "react-test-renderer": "^16.13.1",
     "regenerator-runtime": "^0.13.5",
@@ -87,7 +89,9 @@
     "moduleNameMapper": {
       "\\.(css|less|scss|sass|gif)$": "identity-obj-proxy"
     },
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "transform": {
       ".*": "./node_modules/babel-jest"
     },
